@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Basics</title>
+    <style>
+      /* Hero Section */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 90vh; /* Adjust height of video section */
+        overflow: hidden;
+      }
+
+      .hero video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Overlay text */
+      .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+      }
+
+      .hero h1, .hero p {
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+      }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(37, 87, 249);">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img src="images/france.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          French Basics
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="alphabet.html">Alphabet</a></li>
+            <li class="nav-item"><a class="nav-link" href="greetings.html">Greetings</a></li>
+            <li class="nav-item"><a class="nav-link" href="numbers.html">Numbers</a></li>
+            <li class="nav-item"><a class="nav-link" href="days-time.html">Days & Time</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="family.html">Family</a></li>
+            <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+            <li class="nav-item"><a class="nav-link" href="colours.html">Colours</a></li>
+            <li class="nav-item"><a class="nav-link" href="grammar.html">Grammar</a></li>
+            <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <div class="hero">
+      <video autoplay muted loop>
+        <source src="images/8071324-uhd_3840_2160_24fps.mp4" type="video/mp4">
+      </video>
+      <div class="overlay">
+        <h1 class="fw-bold">
+  Bienvenue! <img src="images/france.png" alt="France Flag" width="40" style="vertical-align: middle;">
+</h1>
+
+        <p class="lead">Welcome to <strong>French Basics</strong> – your one-stop place to learn essential French terms.</p>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+     
+    <div class="container my-5">
+      <!-- about  -->
+      <section class="row mt-5 justify-content-center">
+        <div class="col-md-6">
+          <a href="about.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">About</h5>
+              <p class="card-text">Learn more about us, French Basics, where you learn basic french terms that come in handy during your stay in France.</p>
+            </div>
+          </a>
+        </div>
+
+              </section>
+      <!-- alphabet, greetings, numbers -->
+    <section class="row m-5">
+        <div class="col-md-4 mb-3">
+          <a href="alphabet.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Alphabet</h5>
+              <img src="images/alphabet.jpg" alt="" width="150px" height="150px">
+              <p class="card-text">Learn the French alphabet & pronunciation.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="greetings.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Greetings</h5>
+              <img src="images/greetings.png" alt="" width="150px" height="150px">
+              <p class="card-text">Say hello, goodbye, and introduce yourself.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="numbers.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Numbers</h5>
+              <img src="images/numbers.jpg" alt="" width="150px" height="150px">
+              <p class="card-text">Count in French: 1-100 and beyond.</p>
+            </div>
+          </a>
+        </div>
+        </section>
+        <!-- days-time, travel, family -->
+         <section class="row m-5">
+        <div class="col-md-4 mb-3">
+          <a href="days-time.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Days-Time</h5>
+              <img src="images/time.jpg" alt="" width="150px" height="150px">
+              <p class="card-text">Learn to tell time from months to seasons in a year.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="travel.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Animals</h5>
+              <img src="images/animals.jpg" alt="" width="150px" height="150px">
+              <p class="card-text">Learn the names of common animals in French.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="family.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Family</h5>
+              <img src="images/family.jpg" alt="" width="150px" height="150px">
+              <p class="card-text">Learn words for family members and talking about people.</p>
+            </div>
+          </a>
+        </div>
+        </section>
+
+        <section class="row m-5">
+        <div class="col-md-4 mb-3">
+          <a href="food.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Food</h5>
+              <img src="images/food.jpg" alt="" width="150px" height="150px">
+              <p class="card-text">Common foods, drinks, and restaurant phrases in French.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="colours.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Colours</h5>
+              <img src="images/colours.png" alt="" width="150px" height="150px">
+              <p class="card-text">Discover French words for colours and how to use them.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="grammar.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Grammar</h5>
+              <img src="images/grammar.png" alt="" width="50%" height="50%">
+              <p class="card-text">Simple rules for making sentences, gender and plurals.</p>
+            </div>
+          </a>
+        </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="row mt-5 justify-content-center">
+        <div class="col-md-6">
+          <a href="about.html" class="card shadow text-decoration-none">
+            <div class="card-body text-center">
+              <h5 class="card-title">Quiz</h5>
+              <p class="card-text">Test your French basics with fun interactive questions!</p>
+            </div>
+          </a>
+        </div>
+
+              </section>
+
+        
+        
+      </div>
+
+       <section class="row text-light p-4" style="background-color: rgb(37, 87, 249);">
+                <div class="col-md-4 text-start">
+                    <h5>About Us</h5>
+                    <p>We are an online based mega-mart offering delivery anywhere in the world.</p>
+                    <p>Here you will find almost everything if not all at an affordable price and at the comfort of your home.</p>
+                    <p>Make your purchase and let your goods come to you.</p>
+                    <p></p>
+                </div>
+                <div class="col-md-4 ">
+                    <h5>Contact Us</h5><br>
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="Enter your email" class="form-control"><br>
+                    <br>
+                    <textarea name="" id="" placeholder="Leave a comment" rows="7" class="form-control"></textarea><br><br>
+                    <input type="submit" value="Send Message" class="btn btn-danger ">
+                    </form>
+                </div>
+                <div class="col-md-4 ps-5">
+                    <h5 class="text-center">Stay Connected</h5><br>
+                    <a href="">
+                        <img src="images/fb.png" alt="">
+                    </a>
+                    <a href="">
+                       <img src="images/in.png" alt=""> 
+                    </a>
+                    <a href="">
+                        <img src="images/x.png" alt="">
+                    </a><br><br>
+                    <p class="text-dark">Follow us on Facebook, Instagram and X to find out our latest products, offers and discounts.</p>                   
+                    
+                </div>
+            </section>
+
+            <footer class="text-white bg-dark text-center p-2">
+                <h5>Developed by Prudence. &copy;. All rights reserved</h5>
+
+            </footer>
+    
+
+
+</body>
+</html>
