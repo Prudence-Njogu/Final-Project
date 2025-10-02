@@ -162,6 +162,17 @@
       <b>Fun Fact:</b> In France, greetings often include <em>la bise</em> (a light kiss on both cheeks) with friends and family. Handshakes are more common in formal settings.
     </div>
   </div>
+
+  <nav aria-label="Page navigation">
+  <ul class="pagination d-flex justify-content-between">
+    <li class="page-item">
+      <a class="page-link" href="alphabet.html">← Previous: 1.Alphabet</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="numbers.html">Next: 3. Numbers →</a>
+    </li>
+  </ul>
+</nav>
     
 
       <section class="row text-light p-4" style="background-color: rgb(37, 87, 249);">
@@ -200,5 +211,23 @@
                 <h5>Developed by Prudence. &copy;. All rights reserved</h5>
 
             </footer>
+            
+            <link rel="stylesheet" href="chatbot.css">
+
+<div id="chatbot-container"></div>
+
+<script>
+  fetch("chatbot.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("chatbot-container").innerHTML = html;
+
+      // Only load chatbot.js AFTER chatbot.html has been injected
+      const script = document.createElement("script");
+      script.src = "chatbot.js";
+      document.body.appendChild(script);
+    });
+</script>
+
 </body>
 </html>

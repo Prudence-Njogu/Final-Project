@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French Basics</title>
+  <style>
+    .feedback { margin-top: 8px; font-size: 0.95rem; }
+    .correct { color: green; font-weight: bold; }
+    .wrong { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(37, 87, 249);">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images/france.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        French Basics
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="alphabet.html">Alphabet</a></li>
+          <li class="nav-item"><a class="nav-link" href="greetings.html">Greetings</a></li>
+          <li class="nav-item"><a class="nav-link" href="numbers.html">Numbers</a></li>
+          <li class="nav-item"><a class="nav-link" href="days-time.html">Days & Time</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="family.html">Family</a></li>
+          <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="colours.html">Colours</a></li>
+          <li class="nav-item"><a class="nav-link" href="grammar.html">Grammar</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4">French Basics Quiz</h1>
+    <p class="lead text-center">Test your knowledge across all topics! Select your answers and click "Check Answers".</p>
+
+    <form id="quizForm">
+      <!-- Q1: Greetings -->
+      <div class="mb-4">
+        <h5>1. How do you say "Good morning / Hello" in French?</h5>
+        <div>
+          <input type="radio" name="q1" value="a"> Hola <br>
+          <input type="radio" name="q1" value="b"> Bonjour <br>
+          <input type="radio" name="q1" value="c"> Guten Tag
+        </div>
+        <div class="feedback" id="feedback1"></div>
+      </div>
+
+      <!-- Q2: Alphabet -->
+      <div class="mb-4">
+        <h5>2. What is the French pronunciation of the letter "G"?</h5>
+        <div>
+          <input type="radio" name="q2" value="a"> (ʒay) - like "measure" <br>
+          <input type="radio" name="q2" value="b"> (gee) - like English "G" <br>
+          <input type="radio" name="q2" value="c"> (gay) - like "go"
+        </div>
+        <div class="feedback" id="feedback2"></div>
+      </div>
+
+      <!-- Q3: Numbers -->
+      <div class="mb-4">
+        <h5>3. What is "quinze" in numbers?</h5>
+        <div>
+          <input type="radio" name="q3" value="a"> 5 <br>
+          <input type="radio" name="q3" value="b"> 15 <br>
+          <input type="radio" name="q3" value="c"> 50
+        </div>
+        <div class="feedback" id="feedback3"></div>
+      </div>
+
+      <!-- Q4: Days & Time -->
+      <div class="mb-4">
+        <h5>4. What does "lundi" mean?</h5>
+        <div>
+          <input type="radio" name="q4" value="a"> Monday <br>
+          <input type="radio" name="q4" value="b"> Sunday <br>
+          <input type="radio" name="q4" value="c"> Friday
+        </div>
+        <div class="feedback" id="feedback4"></div>
+      </div>
+
+      <!-- Q5: Travel -->
+      <div class="mb-4">
+        <h5>5. How do you ask "Where is the train station?" in French?</h5>
+        <div>
+          <input type="radio" name="q5" value="a"> Où est la gare ? <br>
+          <input type="radio" name="q5" value="b"> Où est l'école ? <br>
+          <input type="radio" name="q5" value="c"> Où est la voiture ?
+        </div>
+        <div class="feedback" id="feedback5"></div>
+      </div>
+
+      <!-- Q6: Family -->
+      <div class="mb-4">
+        <h5>6. What does "ma sœur" mean?</h5>
+        <div>
+          <input type="radio" name="q6" value="a"> My sister <br>
+          <input type="radio" name="q6" value="b"> My mother <br>
+          <input type="radio" name="q6" value="c"> My aunt
+        </div>
+        <div class="feedback" id="feedback6"></div>
+      </div>
+
+      <!-- Q7: Food -->
+      <div class="mb-4">
+        <h5>7. Which one is the French word for "bread"?</h5>
+        <div>
+          <input type="radio" name="q7" value="a"> Pain <br>
+          <input type="radio" name="q7" value="b"> Fromage <br>
+          <input type="radio" name="q7" value="c"> Riz
+        </div>
+        <div class="feedback" id="feedback7"></div>
+      </div>
+
+      <!-- Q8: Colours -->
+      <div class="mb-4">
+        <h5>8. What does "vert" mean?</h5>
+        <div>
+          <input type="radio" name="q8" value="a"> Red <br>
+          <input type="radio" name="q8" value="b"> Blue <br>
+          <input type="radio" name="q8" value="c"> Green
+        </div>
+        <div class="feedback" id="feedback8"></div>
+      </div>
+
+      <!-- Q9: Grammar -->
+      <div class="mb-4">
+        <h5>9. Which article would you use for "pomme" (apple)?</h5>
+        <div>
+          <input type="radio" name="q9" value="a"> Le <br>
+          <input type="radio" name="q9" value="b"> La <br>
+          <input type="radio" name="q9" value="c"> Les
+        </div>
+        <div class="feedback" id="feedback9"></div>
+      </div>
+
+      <!-- Q10: Animals -->
+      <div class="mb-4">
+        <h5>10. What is the French word for "dog"?</h5>
+        <div>
+          <input type="radio" name="q10" value="a"> Chien <br>
+          <input type="radio" name="q10" value="b"> Chat <br>
+          <input type="radio" name="q10" value="c"> Lapin
+        </div>
+        <div class="feedback" id="feedback10"></div>
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="checkAnswers()">Check Answers</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="mt-4 alert d-none"></div>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      // Correct answers with explanations
+      const answers = {
+        q1: { correct: "b", explanation: "Bonjour means 'Hello/Good morning' in French. Hola is Spanish, Guten Tag is German." },
+        q2: { correct: "a", explanation: "The French 'G' is pronounced (ʒay), similar to the 's' in 'measure'." },
+        q3: { correct: "b", explanation: "Quinze means 15 in French." },
+        q4: { correct: "a", explanation: "Lundi is Monday. Dimanche is Sunday, Vendredi is Friday." },
+        q5: { correct: "a", explanation: "'Où est la gare ?' means 'Where is the train station?'" },
+        q6: { correct: "a", explanation: "Ma sœur means 'my sister'. Mère = mother, tante = aunt." },
+        q7: { correct: "a", explanation: "Pain means bread. Fromage = cheese, Riz = rice." },
+        q8: { correct: "c", explanation: "Vert means green. Rouge = red, Bleu = blue." },
+        q9: { correct: "b", explanation: "'Pomme' (apple) is feminine, so the correct article is 'la pomme'." },
+        q10: { correct: "a", explanation: "Chien = dog. Chat = cat, Lapin = rabbit." }
+      };
+
+      let score = 0;
+
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        const feedback = document.getElementById(`feedback${q.slice(1)}`);
+        if (selected) {
+          if (selected.value === answers[q].correct) {
+            score++;
+            feedback.innerHTML = `<span class="correct"> Correct!</span> ${answers[q].explanation}`;
+          } else {
+            feedback.innerHTML = `<span class="wrong"> Wrong.</span> ${answers[q].explanation}`;
+          }
+        } else {
+          feedback.innerHTML = `<span class="wrong"> No answer selected.</span> ${answers[q].explanation}`;
+        }
+      }
+
+      const resultDiv = document.getElementById("result");
+      resultDiv.classList.remove("d-none", "alert-success", "alert-danger");
+      if (score === 10) {
+        resultDiv.classList.add("alert-success");
+        resultDiv.innerHTML = ` Perfect! You scored ${score}/10. Excellent work! `;
+      } else {
+        resultDiv.classList.add("alert-danger");
+        resultDiv.innerHTML = `You scored ${score}/10. Review the feedback and keep practicing! `;
+      }
+    }
+  </script>
+
+  <nav aria-label="Page navigation">
+  <ul class="pagination d-flex justify-content-between">
+    <li class="page-item">
+      <a class="page-link" href="grammar.html">← Previous: 10. Grammar</a>
+    </li>
+    <li class="page-item">
+      <!-- <a class="page-link" href="family.html">Next: 6. Family →</a> -->
+    </li>
+  </ul>
+</nav>
+
+      <section class="row text-light p-4" style="background-color: rgb(37, 87, 249);">
+    <div class="col-md-4 text-start">
+      <h5>About Us</h5>
+      <p>French Basics is a simple learning platform to help beginners explore common French words and phrases.</p>
+      <p>Our goal is to make learning French fun, visual, and interactive.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Contact Us</h5><br>
+      <form action="">
+        <input type="email" placeholder="Enter your email" class="form-control"><br>
+        <textarea placeholder="Leave a comment" rows="7" class="form-control"></textarea><br>
+        <input type="submit" value="Send Message" class="btn btn-danger">
+      </form>
+    </div>
+    <div class="col-md-4 ps-5">
+      <h5 class="text-center">Stay Connected</h5><br>
+      <a href=""><img src="images/fb.png" alt=""></a>
+      <a href=""><img src="images/in.png" alt=""></a>
+      <a href=""><img src="images/x.png" alt=""></a><br><br>
+      <p class="text-dark">Follow us on Facebook, Instagram and X to find out our latest products, offers and discounts.</p>                   
+    </div>
+  </section>
+
+  <footer class="text-white bg-dark text-center p-2">
+    <h5>Developed by Prudence. &copy;. All rights reserved</h5>
+  </footer>
+
+  <link rel="stylesheet" href="chatbot.css">
+
+<div id="chatbot-container"></div>
+
+<script>
+  fetch("chatbot.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("chatbot-container").innerHTML = html;
+
+      // Only load chatbot.js AFTER chatbot.html has been injected
+      const script = document.createElement("script");
+      script.src = "chatbot.js";
+      document.body.appendChild(script);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French Basics - Colours</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <style>
+    .color-card {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .color-card p {
+      margin: 0;
+      font-weight: normal;
+    }
+    /* Make text black on light backgrounds */
+    .light-text {
+      color: #000 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images/france.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        French Basics
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="alphabet.html">Alphabet</a></li>
+          <li class="nav-item"><a class="nav-link" href="greetings.html">Greetings</a></li>
+          <li class="nav-item"><a class="nav-link" href="numbers.html">Numbers</a></li>
+          <li class="nav-item"><a class="nav-link" href="days-time.html">Days & Time</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="family.html">Family</a></li>
+          <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+          <li class="nav-item"><a class="nav-link active" href="colours.html">Colours</a></li>
+          <li class="nav-item"><a class="nav-link" href="grammar.html">Grammar</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container my-5">
+    <h1 class="text-center fw-bold mb-4"> Colours in French</h1>
+    <p class="lead text-center">Here are some of the most common colours in French with their pronunciation.</p>
+
+    <div class="row text-center g-4">
+      <!-- Red -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: red;">
+          <h5>Rouge</h5>
+          <p>(rooʒ) - Red</p>
+        </div>
+      </div>
+      <!-- Blue -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: blue;">
+          <h5>Bleu</h5>
+          <p>(bluh) - Blue</p>
+        </div>
+      </div>
+      <!-- Green -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: green;">
+          <h5>Vert</h5>
+          <p>(vair) - Green</p>
+        </div>
+      </div>
+      <!-- Yellow -->
+      <div class="col-md-3">
+        <div class="color-card light-text" style="background-color: yellow;">
+          <h5>Jaune</h5>
+          <p>(zhon) - Yellow</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center g-4 mt-1">
+      <!-- Black -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: black;">
+          <h5>Noir</h5>
+          <p>(nwar) - Black</p>
+        </div>
+      </div>
+      <!-- White -->
+      <div class="col-md-3">
+        <div class="color-card light-text" style="background-color: white; border: 1px solid #ccc;">
+          <h5>Blanc</h5>
+          <p>(blahn) - White</p>
+        </div>
+      </div>
+      <!-- Orange -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: orange;">
+          <h5>Orange</h5>
+          <p>(oh-rahnj) - Orange</p>
+        </div>
+      </div>
+      <!-- Pink -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: pink;">
+          <h5 class="light-text">Rose</h5>
+          <p class="light-text">(rohz) - Pink</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center g-4 mt-1">
+      <!-- Purple -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: purple;">
+          <h5>Violet</h5>
+          <p>(vee-oh-lay) - Purple</p>
+        </div>
+      </div>
+      <!-- Brown -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: rgb(68, 37, 17);">
+          <h5>Marron</h5>
+          <p>(mah-rohn) - Brown</p>
+        </div>
+      </div>
+      <!-- Grey -->
+      <div class="col-md-3">
+        <div class="color-card" style="background-color: grey;">
+          <h5>Gris</h5>
+          <p>(gree) - Grey</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-5 text-center"><em>Tip: In French, colours agree with the gender/number of the noun. Example: "un livre vert" (a green book, masculine) vs "une pomme verte" (a green apple, feminine).</em></p>
+  </div>
+
+  <nav aria-label="Page navigation">
+  <ul class="pagination d-flex justify-content-between">
+    <li class="page-item">
+      <a class="page-link" href="food.html">← Previous: 7. Food</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="grammar.html">Next: 9. Grammar →</a>
+    </li>
+  </ul>
+</nav>
+
+    <section class="row text-light p-4" style="background-color: rgb(37, 87, 249);">
+                <div class="col-md-4 text-start">
+                    <h5>About Us</h5>
+    <p>French Basics is a simple learning platform to help beginners explore common French words and phrases.</p>
+    <p>Our goal is to make learning French fun, visual, and interactive.</p>
+
+                </div>
+                <div class="col-md-4 ">
+                    <h5>Contact Us</h5><br>
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="Enter your email" class="form-control"><br>
+                    <br>
+                    <textarea name="" id="" placeholder="Leave a comment" rows="7" class="form-control"></textarea><br><br>
+                    <input type="submit" value="Send Message" class="btn btn-danger ">
+                    </form>
+                </div>
+                <div class="col-md-4 ps-5">
+                    <h5 class="text-center">Stay Connected</h5><br>
+                    <a href="">
+                        <img src="images/fb.png" alt="">
+                    </a>
+                    <a href="">
+                       <img src="images/in.png" alt=""> 
+                    </a>
+                    <a href="">
+                        <img src="images/x.png" alt="">
+                    </a><br><br>
+                    <p class="text-dark">Follow us on Facebook, Instagram and X to find out our latest products, offers and discounts.</p>                   
+                    
+                </div>
+            </section>
+
+            <footer class="text-white bg-dark text-center p-2">
+                <h5>Developed by Prudence. &copy;. All rights reserved</h5>
+
+            </footer>
+
+            <link rel="stylesheet" href="chatbot.css">
+
+<div id="chatbot-container"></div>
+
+<script>
+  fetch("chatbot.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("chatbot-container").innerHTML = html;
+
+      // Only load chatbot.js AFTER chatbot.html has been injected
+      const script = document.createElement("script");
+      script.src = "chatbot.js";
+      document.body.appendChild(script);
+    });
+</script>
+
+
+</body>
+</html>
